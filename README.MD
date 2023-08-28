@@ -2,7 +2,7 @@
 
 Welcome to my awesome project! Here's a screenshot of the main interface:
 
-![Main Interface](https://example.com/images/main-interface.png)
+![First Tiny Square](OpenGL3/res/images/screenshot.jpg)
 
 ## Installation
 
