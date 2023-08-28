@@ -29,5 +29,8 @@
     <Image Include="res\images\BinariesDownload.jpg">
       <Filter>Resource Files</Filter>
     </Image>
+    <Image Include="res\images\AdditionalDependencies.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
   </ItemGroup>
 </Project>

@@ -25,6 +25,7 @@
     <None Include="README.MD" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="res\images\AdditionalDependencies.jpg" />
     <Image Include="res\images\BinariesDownload.jpg" />
     <Image Include="res\images\screenshot.jpg" />
   </ItemGroup>
