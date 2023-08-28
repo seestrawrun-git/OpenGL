@@ -1,6 +1,6 @@
 # Getting Started with OpenGL
 
-Documenting my process for getting up and running with OpenGL.
+Documenting my process for getting up and running with OpenGL.  Thanks to [TheCherno](https://www.youtube.com/@TheCherno) for providing a lot of in-depth resources on this topic.
 
 ![First Tiny Square](OpenGL3/res/images/screenshot.jpg)
 
@@ -73,6 +73,38 @@ int main(void)
     glfwTerminate();
     return 0;
 }
+```
+
+#Configuring GLEW
+
+GLEW is shorthand for the OpenGL Extension Wrangler Library.
+
+It's an open source C/C++ extension loading library that provides efficient run-time mechanisms for determing which OpenGL extensions are supported on the project's target platform.
+
+Pop a quick 
+```
+#include <GL/GLEW.h>
+```
+into you cpp file to make sure the includes have been properly configured.
+
+If there are issues with the linking, check back in the includes and library directories added earlier and click the window's context menu and paste the evaluated values path into your window to make sure it's linking to the correct location of the files.  For this project, I included these dependencies in the root solution folder for the actual project.
+
+GLEW's usage documentation specifies that the 
+```
+glewInit()
+```
+function must be called to initialize the extension entry points.  It needs to be created after the OpenGL rendering context.  In the case of the example code provided by GLFW, the glewInit() function needs to be called after the glfwMakeContextCurrent(window) line.
+
+```    
+/* Make the window's context current */
+    glfwMakeContextCurrent(window);
+
+    if (glewInit() != GLEW_OK)
+        std::cout << "Error" << std::endl;
+
+
+    std::cout << glGetString(GL_VERSION) << std::endl;
+
 ```
 
 
