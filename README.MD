@@ -30,7 +30,8 @@ Now that the dependencies are in the project directory, Visual Studio has to be 
 7. Under Additional Dependencies, add the glfw3.lib;opengl32.lib;glew32s.lib to the list of core dependencies. 
 
 _Your final Additional Dependencies evaluated values should look like this_
-[Additional Dependencies](OpenGL3/res/images/AdditionalDependencies.jpg)
+
+![Additional Dependencies](OpenGL3/res/images/AdditionalDependencies.jpg)
 
 
 
